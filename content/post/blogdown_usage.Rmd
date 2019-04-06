@@ -1,0 +1,6 @@
+---
+title: "Blogdown usage"
+output: html_notebook
+---
+
+How to use blogdown: https://andreaczhang.rbind.io/post/my-1st-blogpost/

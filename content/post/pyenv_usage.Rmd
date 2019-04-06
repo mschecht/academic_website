@@ -1,0 +1,74 @@
+---
+title: "Pyenv documentation"
+output: html_notebook
+---
+
+Pyenv is a great way to manage Python version on your computer. Most tools have converted to Python 3 but every once and a while I will need to use a tool based in Python 2 - pyenv to the rescue! 
+
+[Git repo](https://github.com/pyenv/pyenv)
+
+# Installation
+Let's try with Homebrew [Credit 1](https://github.com/pyenv/pyenv#homebrew-on-macos)
+```{bash}
+# Make sure Homebrew is updated
+brew update
+# Install pyenv
+brew install pyenv
+```
+
+All good? Now `echo` the following lines into your `.bash_profile` [Credit 2](https://github.com/pyenv/pyenv/issues/481#issuecomment-156278090-permalink)
+```{bash}
+echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bash_profile
+```
+
+You should now have pyenv installed, by default it will be installed to ~/.pyenv.
+
+Use the which command to find the current location of the python interpreter.
+```{bash}
+which python
+# /home/mschecht/.pyenv/shims/python
+```
+[Credit](https://anil.io/blog/python/pyenv/using-pyenv-to-install-multiple-python-versions-tox/)
+
+# Usage
+List all python versions availaible to download:
+```{bash}
+pyenv install -l
+```
+
+Install necessary Python versions:
+```{bash}
+pyenv install miniconda3-latest
+pyenv install miniconda2-latest
+```
+
+List versions you installed:
+```{bash}
+pyenv versions
+```
+
+Define a global version of python:
+```{bash}
+pyenv global miniconda3-latest
+```
+
+Define a local version of Python:
+```{bash}
+pyenv local miniconda2-latest
+```
+
+
+# How to Uninstall
+1. This will delete all Python versions that were installed under $(pyenv root)/versions/ directory:  
+```{bash}
+rm -rf $(pyenv root)
+```
+
+2. Remove from the Homebrew package manager
+```{bash}
+brew uninstall pyenv
+```
+
+[Credit](https://github.com/pyenv/pyenv#user-content-uninstalling-pyenv)
+
+

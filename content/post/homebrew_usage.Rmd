@@ -1,0 +1,14 @@
+---
+title: "Homebrew"
+output: html_notebook
+---
+
+What is a package manager?
+
+Where do I find homebrew on my computer?
+
+
+[Homebrew](https://brew.sh/)
+
+
+Examples of macOS installation scripts [here](https://medium.com/@deianisac/how-to-quickly-set-up-a-mac-b9f89aed0dc), [here](https://gist.github.com/CliffordAnderson/817777b5dc0e67769e4b), and [here](https://gist.github.com/codeinthehole/26b37efa67041e1307db)

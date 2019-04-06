@@ -1,0 +1,83 @@
+---
+title: "Conda environment managment"
+output: html_notebook
+---
+
+I use [pyenv](https://github.com/pyenv/pyenv) to manage my Python versions and [conda]() to manange my environments.
+
+Decent description of conda environment management [here](https://towardsdatascience.com/environment-management-with-conda-python-2-3-b9961a8a5097).
+
+[Installation Documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/macos.html?highlight=miniconda)
+
+# Installation
+```{bash}
+# Download
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh # MacOSX
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh # Linux
+
+# Make is executable
+chmod +x Miniconda3-latest-MacOSX-x86_64.sh # MacOSX
+chmod +x Miniconda3-latest-Linux-x86_64.sh # Linux
+
+# Run it
+./Miniconda3-latest-MacOSX-x86_64.sh # MacOSX
+./Miniconda3-latest-Linux-x86_64.sh # Linux
+
+# Set miniconda $PATH whereever you want for autocomplete... I put in my .bashrc
+export PATH="$HOME/miniconda/bin:$PATH"
+
+# remove installer
+rm Miniconda3-latest-MacOSX-x86_64.sh
+rm Miniconda3-latest-Linux-x86_64.sh
+
+# Add some channels to download packages
+conda config --add channels conda-forge
+conda config --add channels bioconda
+```
+
+Dont load (base) environment everytime [credit](https://stackoverflow.com/questions/54429210/how-do-i-prevent-conda-from-activating-the-base-environment-by-default#54560785)
+```{bash}
+conda config --set auto_activate_base false
+```
+
+# Usage
+
+Good links [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
+Reference for all the commands [here](https://docs.conda.io/projects/conda/en/latest/commands.html)
+```{bash}
+
+```
+
+Conda and BASH script: https://stackoverflow.com/questions/47780634/bash-and-conda-installing-non-conda-packages-in-conda-environment-with-executab
+
+
+Activate/Deactivate an environment
+```{bash}
+conda activate env
+
+conda deactivate env
+```
+
+Export yml file
+```{bash}
+conda env export > environment.yml
+```
+
+
+
+# Uninstall
+Remove directories
+```{bash}
+$ rm -rf "${HOME}"/miniconda/
+$ rm -rf "${HOME}"/anaconda/
+```
+
+Remove these lines from `.bash_profile` which were added my the Miniconda/Anaconda installers
+```{bash}
+# added by Miniconda3 installer
+$ export PATH=""${HOME}"/miniconda3/miniconda3/bin:$PATH"
+# added by Anaconda3 installer
+$ export PATH=""${HOME}"/miniconda3/anaconda3/bin:$PATH"
+```
+[Credit](http://deeplearning.lipingyang.org/2018/12/24/install-miniconda-on-mac/)

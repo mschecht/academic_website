@@ -1,0 +1,7 @@
+---
+title: "Practical Snakemake"
+output: html_notebook
+---
+
+[Tutorial](https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html)
+

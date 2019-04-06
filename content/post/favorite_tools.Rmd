@@ -1,0 +1,41 @@
+---
+title: "Favorite tools!"
+output: html_notebook
+---
+
+# FASTA manipulation
+
+## [Seqkit](https://bioinf.shenwei.me/seqkit/)
+
+[Github](https://github.com/shenwei356/seqkit)
+
+[Tutorial](https://bioinf.shenwei.me/seqkit/tutorial/#tutorial)
+
+### Installation
+
+### Usage
+
+#### Explore statistics of sequences in a FASTA file with the `stats` argument
+
+First let's get a FASTQ file to play with
+```{bash}
+wget 
+```
+
+
+The `--all` flag give more statistics such as the quartiles of the sequence lengths and the N50
+```{bash}
+seqkit stats TARA_non_redundant_MAGs_AA.fa --all
+```
+
+
+### Un-install
+
+# Nice tutorial on working with metagenomes
+
+[Here](https://github.com/genomewalker/p2p/wiki/Wednesday)
+
+
+# BASH
+
+[The ultimate guide](https://www.tldp.org/LDP/Bash-Beginners-Guide/html/)

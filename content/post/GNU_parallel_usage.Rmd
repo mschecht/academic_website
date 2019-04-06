@@ -1,0 +1,10 @@
+---
+title: "GNU parallel"
+output: html_notebook
+---
+
+# Install
+```{bash}
+conda install -c bioconda parallel 
+```
+

@@ -1,0 +1,21 @@
+---
+title: "Practical Snakemake"
+output: html_notebook
+---
+
+[Tutorial](https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html)
+
+# Usage
+
+When you want a tmp file deleted after a rule:
+
+Snakemake will automatically delete `tmp` files if they are surrounded with `temp()`
+```{bash}
+rule example:
+    """mark the output with temp()"""
+    output:
+        temp('{ODIR}/file.file')
+```
+[Credit]https://snakemake.readthedocs.io/en/stable/tutorial/advanced.html#step-6-temporary-and-protected-files)
+
+## [Executing Snakemake](https://snakemake.readthedocs.io/en/stable/executable.html)

@@ -3,7 +3,7 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = "https://mattschechter.com/"
 
 # Title of your site
 title = "Matthew S. Schechter"
@@ -64,7 +64,7 @@ enableGitInfo = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "mschechter.lb@gmail.com"
-  address = "Celsiusstrasse 1, D-28359 Bremen, Germany
+  address = "Celsiusstrasse 1, D-28359 Bremen, Germany"
   office_hours = ""
   phone = "+49 421 2028-736"
   skype = "mattschechter"
@@ -96,10 +96,10 @@ enableGitInfo = false
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  map = 0
+  map = 1
   map_api_key = ""
-  latitude = "37.4275"
-  longitude = "-122.1697"
+  latitude = "53.109624"
+  longitude = "8.847559"
   zoom = 15
 
   # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
@@ -224,25 +224,29 @@ enableGitInfo = false
   #   Full list: https://jpswalsh.github.io/academicons/
 
   [[params.social]]
-    icon = "envelope"
+    icon = "orcid"
+    icon_pack = "ai"
+    link = "https://orcid.org/0000-0002-8435-3203"
+
+  [[params.social]]
+    icon = "linkedin"
     icon_pack = "fa"
-    link = "mailto:test@example.org"
+    link = "https://www.linkedin.com/in/matthewschechter/"
 
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/GeorgeCushen"
+    link = "https://twitter.com/"
 
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+#  [[params.social]]
+#    icon = "researchgate
+#    icon_pack = "ai"
+#    link = "https://www.researchgate.net/profile/Matthew_Schechter2"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/gcushen"
-
+    link = "//github.com/gcushe://github.com/mschecht"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the

@@ -1,0 +1,13 @@
+---
+title: "How to avoid mistakes with taxonomy tables"
+output: html_notebook
+---
+
+Working with taxonomy files suck!
+
+Before upload or doing any joins in BASH replace all spaces with some kind of connector (e.g. "_") because phylum levels like species may have 2 names with spaces and screw up everything
+
+
+```{bash}
+join -1 1 -2 1 <(sort -k 1,1 rhodopsin_clusters_names.tsv) <(zcat /bioinf/projects/megx/UNKNOWNS/2017_11/taxonomy/k_tax_stat.tsv.gz | head | sed 's/ /_/g'| sort -k 1,1)
+```

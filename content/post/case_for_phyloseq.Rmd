@@ -1,0 +1,6 @@
+---
+title: "When in doubt, phyloseq!"
+output: html_notebook
+---
+
+Recently, my supervisor, Dr. Antonio Fernandez-Guerra, and I came up with different descriptive statistics when analyzing the same ecological feature table. This resulted from Antonio mistrusting my analysis due to an anomoly in my results. I was then tasked to compare both of our scripts and resolve the discrepancy between our analyses. To my suprise, Antonio made a phyloseq object as quickly as possible from our original count data then continued on with the analyses with normalization, transformation, and filtering steps. My strategy was to keep the ecological count data in the long format so that I could used data.table to quickly tidy and manipulate the large dataset. 
