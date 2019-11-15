@@ -5,3 +5,19 @@ output: html_notebook
 
 [Tutorial](https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html)
 
+
+
+Also need to make a post about sublime text
+
+For the VIM mode there is no initial "key repeat"... to fix this go to the [link](https://www.sublimetext.com/docs/3/vintage.html) and cntrl F "repeat" there you will find the code block below:
+
+**NOTICE** I changed the `2` to a `3` because I use Sublime Text 3
+```{bash}
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+```
+
+
+Sublime Text 3 packages I like:
+
+Gitgutter
+Vintage mode for vim keys
